@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JP Studio - Barbearia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="icon" href="img/logo.png">
+    
+    <script>
+      emailjs.init({publicKey: "AHtBzi2NUFwzbW_aN" });
+    </script>
+
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo JP Studio" class="logo-img" />
+    <h1>JP STUDIO CORTES CLASSICOS E ATUAIS</h1> 
+    <div class="btvoltar"><a href="index.html">Voltar</a></div>
+    
+</header>
+
+
+  <section id="agendamento">
+    <h2>Agende seu horário</h2>
+    
+    <form id="form-agendamento">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="tel" name="telefone" placeholder="Telefone" required />
+      <input type="date" name="data" id="data" required>
+      
+      <select name="hora" id="hora" required>
+        <option value="">Escolha um horário</option></select>
+      
+        <select name="servico" required>
+        <option value="">Escolha um serviço</option>
+        <option value="corte">Corte - €15 (30min)</option>
+        <option value="barba">Barba - €10 (30min)</option>
+        <option value="corte_barba">Corte + Barba - €20 (1h)</option>
+      </select>
+      <button type="submit">Agendar</button>
+    </form>
+    
+  </section>
+ 
+  
+
+
+  <footer>
+    <p> <p> <a href="https://www.google.com/maps/dir/Est%C3%A1dio+Municipal+de+Leiria+-+Est%C3%A1dio+Dr.+Magalh%C3%A3es+Pessoa,+Arrabalde+d'Aqu%C3%A9m,+Leiria/R.+Dr.+Ant%C3%B3nio+da+Costa+Santos+22,+2410-084+Leiria/@39.7447717,-8.80757,16.75z/data=!4m13!4m12!1m5!1m1!1s0xd22736ab50d8bd3:0x6d916f71cd1ef706!2m2!1d-8.812924!2d39.7487752!1m5!1m1!1s0xd2273002a4f84f5:0x91c0b1dc8c0eda23!2m2!1d-8.8052074!2d39.7420552?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D"><img src="img/mapa-removebg-preview.png" alt=""></a> <br>Rua Doutor Antonio da Costa Santos n°22 - 2410-084 - Centro
+    <p>📞 (351) 961296887</p>
+     <a href="https://www.instagram.com/jpstudio.pt/"><img src="img/instagram-removebg-preview.png" alt="instagram"></a>
+    <a href="https://www.instagram.com/jpstudio.pt/"><img src="img/facebook-removebg-preview.png" alt="Facebook"></a>
+    <p>🕒 Seg a Sáb - 9h às 20h</p>
+  </footer>
+
+  
+
+  <script src="script.js"></script>
+  <video id="backgroundVideo" autoplay muted loop>
+    <source src="video/barbeiro-curto.mp4.mp4" type="video/mp4">
+  </video>
+
+  <a
+  href="https://wa.me/351961296887"
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="Fale conosco no WhatsApp"
+>
+  <img src="img/10000484-removebg-preview.png" alt="WhatsApp" />
+</a>
+
+  
+</body>
+</html>
